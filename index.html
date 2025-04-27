@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Paradise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="shortcut icon" href="./images/Pet-Paradise-logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-gradient-to-r from-orange-500 to-yellow-500 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold">Pet Paradise</div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-gray-200 transition">Home</a>
+                <a href="#" class="hover:text-gray-200 transition">Shop</a>
+                <a href="#" class="hover:text-gray-200 transition">Collection</a>
+                <a href="#" class="hover:text-gray-200 transition">Blog</a>
+                <a href="#" class="hover:text-gray-200 transition">Service</a>
+                <a href="#" class="hover:text-gray-200 transition">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hover:text-gray-200"><i class="fa fa-search"></i></a>
+                <a href="./htmlfiles/login.html" class="hover:text-gray-200"><i class="fa fa-user"></i></a>
+                <a href="#" class="hover:text-gray-200"><i class="fa fa-shopping-cart"></i></a>
+                <button class="md:hidden" onclick="toggleNav()"><i class="fa fa-bars"></i></button>
+            </div>
+        </div>
+        <nav id="mobile-nav" class="hidden md:hidden bg-orange-600 text-white flex-col items-center p-4">
+            <a href="#" class="py-2 hover:text-gray-200">Home</a>
+            <a href="#" class="py-2 hover:text-gray-200">Shop</a>
+            <a href="#" class="py-2 hover:text-gray-200">Collection</a>
+            <a href="#" class="py-2 hover:text-gray-200">Blog</a>
+            <a href="#" class="py-2 hover:text-gray-200">Service</a>
+            <a href="#" class="py-2 hover:text-gray-200">Contact</a>
+        </nav>
+    </header>
+
+    <section class="relative">
+        <div class="slideshow-container">
+            <div class="slide">
+                <img class="slide-image w-full h-[600px] object-cover" src="./images/slider images/i want light orange (0).jpg" alt="Slide 0">
+                <img class="slide-image w-full h-[600px] object-cover hidden" src="./images/slider images/i want light orange (1).jpg" alt="Slide 1">
+                <img class="slide-image w-full h-[600px] object-cover hidden" src="./images/slider images/i want light orange (2).jpg" alt="Slide 2">
+                <!-- Add more slides as needed -->
+            </div>
+            <button class="prev absolute top-1/2 left-4 text-white bg-black bg-opacity-50 p-2 rounded-full" onclick="plusSlides(-1)">❮</button>
+            <button class="next absolute top-1/2 right-4 text-white bg-black bg-opacity-50 p-2 rounded-full" onclick="plusSlides(1)">❯</button>
+        </div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Premium Pet Food</h1>
+            <p class="text-xl md:text-2xl mb-6">Up to 40% Off!</p>
+            <button class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Pet <span class="text-orange-500">Categories</span></h2>
+            <div class="flex overflow-x-auto space-x-4 p-4">
+                <a href="products.html" class="pet-category flex-shrink-0 text-center">
+                    <img src="./images/pet-categries/dog.png" alt="Dog" class="w-32 h-32 rounded-full border-2 border-orange-500 hover:scale-110 transition">
+                    <p class="mt-2 text-gray-700 font-semibold">Dog</p>
+                </a>
+                <a href="products.html" class="pet-category flex-shrink-0 text-center">
+                    <img src="./images/pet-categries/cat.png" alt="Cat" class="w-32 h-32 rounded-full border-2 border-orange-500 hover:scale-110 transition">
+                    <p class="mt-2 text-gray-700 font-semibold">Cat</p>
+                </a>
+                <a href="products.html" class="pet-category flex-shrink-0 text-center">
+                    <img src="./images/pet-categries/bird.png" alt="Bird" class="w-32 h-32 rounded-full border-2 border-orange-500 hover:scale-110 transition">
+                    <p class="mt-2 text-gray-700 font-semibold">Bird</p>
+                </a>
+                <a href="products.html" class="pet-category flex-shrink-0 text-center">
+                    <img src="./images/pet-categries/fish.png" alt="Fish" class="w-32 h-32 rounded-full border-2 border-orange-500 hover:scale-110 transition">
+                    <p class="mt-2 text-gray-700 font-semibold">Fish</p>
+                </a>
+                <a href="products.html" class="pet-category flex-shrink-0 text-center">
+                    <img src="./images/pet-categries/rabbit.png" alt="Rabbit" class="w-32 h-32 rounded-full border-2 border-orange-500 hover:scale-110 transition">
+                    <p class="mt-2 text-gray-700 font-semibold">Rabbit</p>
+                </a>
+                <a href="products.html" class="pet-category flex-shrink-0 text-center">
+                    <img src="./images/pet-categries/hamster and guinea pig.png" alt="Guinea pig" class="w-32 h-32 rounded-full border-2 border-orange-500 hover:scale-110 transition">
+                    <p class="mt-2 text-gray-700 font-semibold">Guinea Pig</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Coupon <span class="text-orange-500">Deals</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="coupon bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold text-orange-500">₹5000 Off</h3>
+                    <p class="text-gray-600">On minimum spend of ₹35000</p>
+                    <button class="coupon-btn mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition" data-amount="5000">Get Coupon</button>
+                </div>
+                <div class="coupon bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold text-orange-500">₹2000 Off</h3>
+                    <p class="text-gray-600">On minimum spend of ₹15000</p>
+                    <button class="coupon-btn mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition" data-amount="2000">Get Coupon</button>
+                </div>
+                <div class="coupon bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold text-orange-500">₹1000 Off</h3>
+                    <p class="text-gray-600">On minimum spend of ₹10000</p>
+                    <button class="coupon-btn mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition" data-amount="1000">Get Coupon</button>
+                </div>
+                <div class="coupon bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                    <h3 class="text-2xl font-bold text-orange-500">₹500 Off</h3>
+                    <p class="text-gray-600">On minimum spend of ₹5000</p>
+                    <button class="coupon-btn mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition" data-amount="500">Get Coupon</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Carts <span class="text-orange-500">Section</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="cart-item bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="./images/banner-images/offer-banner-1.jpg" alt="Dog Food" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Premium Dog Food</h3>
+                    <p class="text-gray-600 mb-4">High-quality food for your furry friend. Rich in minerals and nutrients, tasty and natural.</p>
+                    <button class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Shop Now</button>
+                </div>
+                <div class="cart-item bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="./images/banner-images/offer-banner-2.jpg" alt="Cat Treats" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Cat Treats</h3>
+                    <p class="text-gray-600 mb-4">Delicious treats for your feline companion. Includes chicken, tuna, and salmon flavors.</p>
+                    <button class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Shop Now</button>
+                </div>
+                <div class="cart-item bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition">
+                    <img src="./images/banner-images/offer-banner-3.jpg" alt="Bird Seeds" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <h3 class="text-lg font-semibold text-gray-800">Bird Seeds</h3>
+                    <p class="text-gray-600 mb-4">Nutritious seeds and treats for your feathered friend. Includes fruit, veggie, and nut mixes.</p>
+                    <button class="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Featured <span class="text-orange-500">Products</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
+                    <img src="./images/product images/BIRD/Birdcage Parrot Birdcage Clock.png" alt="Birdcage Clock" class="w-full h-40 object-contain">
+                    <h4 class="text-lg font-semibold mt-2">Birdcage Clock</h4>
+                    <p class="text-gray-600">₹500</p>
+                    <p class="text-orange-500">Up to 20% off</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
+                    <img src="./images/product images/CAT/Cat Whiskers Dog Bed Pet, Cat, furniture,.png" alt="Cat Bed" class="w-full h-40 object-contain">
+                    <h4 class="text-lg font-semibold mt-2">Cat Bed</h4>
+                    <p class="text-gray-600">₹800</p>
+                    <p class="text-orange-500">Up to 20% off</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
+                    <img src="./images/product images/DOG/Veterinary medicine Dog.png" alt="Dog Medicine" class="w-full h-40 object-contain">
+                    <h4 class="text-lg font-semibold mt-2">Dog Medicine</h4>
+                    <p class="text-gray-600">₹300</p>
+                    <p class="text-orange-500">Up to 20% off</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
+                    <img src="./images/product images/CAT/Cat play and toys Hammock Felidae Bed, cat, angle, furniture.png" alt="Cat Hammock" class="w-full h-40 object-contain">
+                    <h4 class="text-lg font-semibold mt-2">Cat Hammock</h4>
+                    <p class="text-gray-600">₹600</p>
+                    <p class="text-orange-500">Up to 20% off</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="products.html" class="bg-orange-500 text-white px-6 py-3 rounded-full hover:bg-orange-600 transition">More Products</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Popular <span class="text-orange-500">Brands</span></h2>
+            <div class="flex overflow-x-auto space-x-4 p-4">
+                <div class="brand-item flex-shrink-0">
+                    <img src="./images/brand-image/brand-1.jpg" alt="Brand 1" class="w-24 h-24 object-contain hover:scale-110 transition">
+                </div>
+                <div class="brand-item flex-shrink-0">
+                    <img src="./images/brand-image/brand-2.jpg" alt="Brand 2" class="w-24 h-24 object-contain hover:scale-110 transition">
+                </div>
+                <div class="brand-item flex-shrink-0">
+                    <img src="./images/brand-image/brand-3.jpg" alt="Brand 3" class="w-24 h-24 object-contain hover:scale-110 transition">
+                </div>
+                <div class="brand-item flex-shrink-0">
+                    <img src="./images/brand-image/brand-4.jpg" alt="Brand 4" class="w-24 h-24 object-contain hover:scale-110 transition">
+                </div>
+                <div class="brand-item flex-shrink-0">
+                    <img src="./images/brand-image/brand-5.jpg" alt="Brand 5" class="w-24 h-24 object-contain hover:scale-110 transition">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Services <span class="text-orange-500">& Support</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="feature-item bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                    <img src="./images/service&support images/service-icon-1.png" alt="Free Delivery" class="w-12 h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-orange-500">Free Same-Day Delivery</h3>
+                    <p class="text-gray-600">Place your order in the morning and get it delivered the same night.</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Shop Now</button>
+                </div>
+                <div class="feature-item bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                    <img src="./images/service&support images/service-icon-2.png" alt="30 Day Return" class="w-12 h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-orange-500">30 Day Return</h3>
+                    <p class="text-gray-600">Enjoy 35% off your first order and an additional 5% off all future orders.</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Get Discount</button>
+                </div>
+                <div class="feature-item bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                    <img src="./images/service&support images/service-icon-3.png" alt="Secure Payment" class="w-12 h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-orange-500">Secure Payment</h3>
+                    <p class="text-gray-600">Receive 25% off your online order with secure payment options.</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Order Now</button>
+                </div>
+                <div class="feature-item bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                    <img src="./images/service&support images/service-icon-4.png" alt="24/7 Support" class="w-12 h-12 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-orange-500">24/7 Support</h3>
+                    <p class="text-gray-600">Shop online and get orders over ₹100 shipped fast and free with 24/7 support.</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Shop Online</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gradient-to-r from-orange-500 to-yellow-500 text-white py-12 relative">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">Pet Paradise</h3>
+                <p>Contact us at: <a href="mailto:support@petparadise.com">support@petparadise.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> 30 Kavi Nagar St, Vanalour, OH 43062</p>
+                <p><i class="fas fa-phone"></i> (+21)-6534-564-879</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Corporate</h4>
+                <a href="#" class="block hover:text-gray-200">Careers</a>
+                <a href="#" class="block hover:text-gray-200">About Us</a>
+                <a href="#" class="block hover:text-gray-200">Contact Us</a>
+                <a href="#" class="block hover:text-gray-200">FAQs</a>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Information</h4>
+                <a href="#" class="block hover:text-gray-200">Online Store</a>
+                <a href="#" class="block hover:text-gray-200">Privacy Policy</a>
+                <a href="#" class="block hover:text-gray-200">Refund Policy</a>
+                <a href="#" class="block hover:text-gray-200">Track Order</a>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:text-gray-200"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-gray-200"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-gray-200"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-gray-200"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            <p>@ 2023 Made with 🩷 by Pet Paradise</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

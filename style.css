@@ -1,0 +1,58 @@
+/* Custom styles to complement Tailwind CSS */
+body {
+  overflow-x: hidden;
+}
+
+header {
+  transition: all 0.3s ease;
+}
+
+#mobile-nav {
+  transition: all 0.3s ease;
+}
+
+.slideshow-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-image {
+  transition: opacity 0.5s ease;
+}
+
+.pet-category img {
+  object-fit: cover;
+}
+
+.pet-category p {
+  transition: color 0.3s ease;
+}
+
+.pet-category:hover p {
+  color: #f97316; /* Matches orange-500 */
+}
+
+.box-1 .heart-icon.favorited {
+  color: #ef4444; /* Matches red-500 */
+  font-weight: bold;
+}
+
+.coupon {
+  transition: all 0.3s ease;
+}
+
+.cart-item {
+  transition: all 0.3s ease;
+}
+
+.brand-item img {
+  transition: transform 0.3s ease;
+}
+
+.feature-item {
+  transition: all 0.3s ease;
+}
+
+footer a {
+  transition: color 0.3s ease;
+}
