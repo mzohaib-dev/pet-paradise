@@ -56,3 +56,23 @@ header {
 footer a {
   transition: color 0.3s ease;
 }
+.box-1 img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.box-1:hover img {
+  animation: fancyHover 0.4s ease forwards;
+  filter: brightness(1.15) drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes fancyHover {
+  0% {
+    transform: scale(1) rotateY(0deg);
+  }
+  50% {
+    transform: scale(1.15) rotateY(10deg) translateY(-10px);
+  }
+  100% {
+    transform: scale(1.1) rotateY(5deg) translateY(-5px);
+  }
+}
