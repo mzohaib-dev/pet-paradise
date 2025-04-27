@@ -40,16 +40,129 @@
     <section class="py-12 bg-white">
         <div class="container mx-auto">
             <h2 class="text-3xl font-bold text-center mb-8">All <span class="text-orange-500">Products</span></h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition">
-                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 opacity-0 transition-opacity"></i>
+            <div class="items grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <!-- Item 1 -->
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
                     <div class="price absolute top-4 right-4 bg-white px-2 py-1 rounded-full opacity-0 transition-opacity">₹500</div>
-                    <img src="./images/product images/BIRD/Bird Swing Bead Wood Clothing Accessories.png" alt="" class="w-full h-40 object-contain">
+                    <img src="./images/product images/BIRD/Bird Swing Bead Wood Clothing Accessories.png" alt="Bird Swing Bead Wood Clothing Accessories" class="w-full h-40 object-contain">
                     <h4 class="text-lg font-semibold mt-2">Accessories & Treats</h4>
+                    <p class="text-gray-600">₹500</p>
                     <p class="text-orange-500">Up to 20% off</p>
                     <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
                 </div>
-                <!-- Add more product items similarly -->
+            
+                <!-- Item 2 -->
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
+                    <div class="price absolute top-4 right-4 bg-white px-2 py-1 rounded-full opacity-0 transition-opacity">₹500</div>
+                    <img src="./images/product images/BIRD/Bird Toy parrot Cockatoo Cage.png" alt="Bird Toy parrot Cockatoo Cage" class="w-full h-40 object-contain">
+                    <h4 class="text-lg font-semibold mt-2">Accessories & Treats</h4>
+                    <p class="text-gray-600">₹500</p>
+                    <p class="text-orange-500">Up to 20% off</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+            
+                <!-- Item 3 -->
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
+                    <div class="price absolute top-4 right-4 bg-white px-2 py-1 rounded-full opacity-0 transition-opacity">₹500</div>
+                    <img src="./images/product images/BIRD/Birdcage Parrot Birdcage Clock.png" alt="Birdcage Parrot Birdcage Clock" class="w-full h-40 object-contain">
+                    <h4 class="text-lg font-semibold mt-2">Accessories & Treats</h4>
+                    <p class="text-gray-600">₹500</p>
+                    <p class="text-orange-500">Up to 20% off</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+            
+                <!-- Item 4 -->
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
+                    <div class="price absolute top-4 right-4 bg-white px-2 py-1 rounded-full opacity-0 transition-opacity">₹500</div>
+                    <img src="./images/product images/BIRD/birdfood-1.png" alt="Bird Food 1" class="w-full h-40 object-contain">
+                    <h4 class="text-lg font-semibold mt-2">Accessories & Treats</h4>
+                    <p class="text-gray-600">₹500</p>
+                    <p class="text-orange-500">Up to 20% off</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+            
+                <!-- Item 5 -->
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
+                    <div class="price absolute top-4 right-4 bg-white px-2 py-1 rounded-full opacity-0 transition-opacity">₹500</div>
+                    <img src="./images/product images/BIRD/birdfood-3.png" alt="Bird Food 3" class="w-full h-40 object-contain">
+                    <h4 class="text-lg font-semibold mt-2">Accessories & Treats</h4>
+                    <p class="text-gray-600">₹500</p>
+                    <p class="text-orange-500">Up to 20% off</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+            
+                <!-- Item 6 -->
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
+                    <div class="price absolute top-4 right-4 bg-white px-2 py-1 rounded-full opacity-0 transition-opacity">₹500</div>
+                    <img src="./images/product images/BIRD/birdfood-4.png" alt="Bird Food 4" class="w-full h-40 object-contain">
+                    <h4 class="text-lg font-semibold mt-2">Accessories & Treats</h4>
+                    <p class="text-gray-600">₹500</p>
+                    <p class="text-orange-500">Up to 20% off</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+            
+                <!-- Item 7 -->
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
+                    <div class="price absolute top-4 right-4 bg-white px-2 py-1 rounded-full opacity-0 transition-opacity">₹500</div>
+                    <img src="./images/product images/BIRD/birdfood-5.png" alt="Bird Food 5" class="w-full h-40 object-contain">
+                    <h4 class="text-lg font-semibold mt-2">Accessories & Treats</h4>
+                    <p class="text-gray-600">₹500</p>
+                    <p class="text-orange-500">Up to 20% off</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+            
+                <!-- Item 8 -->
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
+                    <div class="price absolute top-4 right-4 bg-white px-2 py-1 rounded-full opacity-0 transition-opacity">₹500</div>
+                    <img src="./images/product images/BIRD/birdfood-6.png" alt="Bird Food 6" class="w-full h-40 object-contain">
+                    <h4 class="text-lg font-semibold mt-2">Accessories & Treats</h4>
+                    <p class="text-gray-600">₹500</p>
+                    <p class="text-orange-500">Up to 20% off</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+            
+                <!-- Item 9 -->
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
+                    <div class="price absolute top-4 right-4 bg-white px-2 py-1 rounded-full opacity-0 transition-opacity">₹500</div>
+                    <img src="./images/product images/BIRD/birdfood-7.png" alt="Bird Food 7" class="w-full h-40 object-contain">
+                    <h4 class="text-lg font-semibold mt-2">Accessories & Treats</h4>
+                    <p class="text-gray-600">₹500</p>
+                    <p class="text-orange-500">Up to 20% off</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+            
+                <!-- Item 10 -->
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
+                    <div class="price absolute top-4 right-4 bg-white px-2 py-1 rounded-full opacity-0 transition-opacity">₹500</div>
+                    <img src="./images/product images/CAT/Car seat Dog Comfort, pet accessories, png free download.png" alt="Car Seat for Pets" class="w-full h-40 object-contain">
+                    <h4 class="text-lg font-semibold mt-2">Accessories & Treats</h4>
+                    <p class="text-gray-600">₹500</p>
+                    <p class="text-orange-500">Up to 20% off</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
+            
+                <!-- Repeat for Remaining Items... -->
+            
+                <!-- Final Item -->
+                <div class="box-1 bg-gray-50 p-4 rounded-lg shadow-lg hover:shadow-xl transition relative">
+                    <i class="fa-regular fa-heart heart-icon text-red-500 absolute top-4 left-4 cursor-pointer" onclick="toggleFavorite(this)"></i>
+                    <div class="price absolute top-4 right-4 bg-white px-2 py-1 rounded-full opacity-0 transition-opacity">₹500</div>
+                    <img src="./images/product images/RABBIT/rabbitfood-3.png" alt="Rabbit Food 3" class="w-full h-40 object-contain">
+                    <h4 class="text-lg font-semibold mt-2">Accessories & Treats</h4>
+                    <p class="text-gray-600">₹500</p>
+                    <p class="text-orange-500">Up to 20% off</p>
+                    <button class="mt-4 bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">Add to Cart</button>
+                </div>
             </div>
         </div>
     </section>
